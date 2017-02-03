@@ -15,8 +15,18 @@ def promedio(a)
 	a.each do |i|
 		suma += i
 	end
-	promedio = suma.to_f / a
+	promedio = suma / c
 end
 
 b = promedio(array)
 puts "Item 3: #{b}"
+
+def aumenta(array)
+	arrayc = array.map do |elemento|
+		elemento + 1
+	end
+	arrayc
+end
+
+arrayc = aumenta(array)
+puts "Item 4: #{arrayc}"
